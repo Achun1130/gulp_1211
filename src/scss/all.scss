@@ -1,0 +1,16 @@
+@import "utilities/helpers";
+@import "bootstrap";
+@import "lightbox";
+$primary-color: #004466;
+
+body {
+    color: $primary-color;
+    font-size: 10px;
+    background-color: $hex-color;
+    transform: rotate(30deg);
+    transform: rotate(0deg);
+}
+
+a {
+    display: block;
+}

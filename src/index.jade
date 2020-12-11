@@ -1,0 +1,17 @@
+extend _layout.jade
+
+block title
+    title Chin | 首頁
+
+block content
+    h1.text-pink Hello World
+    hr 
+    |Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis modi sed reiciendis. Aperiam ea magnam sequi, deserunt non vitae laborum vel facere distinctio. Minus, deserunt iusto magnam iure molestiae rerum?
+    p.display-1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat exercitationem, id dolor magnam ad delectus nisi qui, dolorum voluptates beatae, ducimus ut totam? Animi placeat repellendus ea labore impedit aperiam.
+    ul
+        each item in list
+            li: a(href="#{ item.url }") #{ item.name }
+
+block navbar
+    - let path = "首頁"
+    include ./partials/_navbar.jade

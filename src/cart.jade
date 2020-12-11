@@ -1,0 +1,16 @@
+extend _layout.jade
+
+block title
+    title Chin | 購物車
+
+block content
+    .card-columns.mt-5
+        each item in ks
+            .card
+                img.card-img-top(src='#{ item.Picture1 }' alt='#{ item.Name }')
+                .card-body
+                    h5.card-title #{ item.Name }
+                    p.card-text #{ item.Description }
+block navbar
+    - let path = "購物車"
+    include ./partials/_navbar.jade

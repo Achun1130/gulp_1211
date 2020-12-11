@@ -1,0 +1,14 @@
+extend _layout.jade
+
+block title
+    title Chin | 登入
+
+block content
+    each item in lightbox
+        a(href='#{ item.url }' data-lightbox='roadtrip')
+            img(src="#{ item.url }", alt="#{ item.name }" width="150" height="150")
+
+
+block navbar
+    - let path = "登入"
+    include ./partials/_navbar.jade
